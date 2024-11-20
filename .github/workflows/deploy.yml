@@ -53,7 +53,7 @@ jobs:
         run: |
           docker build -t ppe-detection .
           docker tag ppe-detection:latest 794038239290.dkr.ecr.us-east-1.amazonaws.com/ppe-detection:latest
-          docker push 794038239290.dkr.ecr.us-west-1.amazonaws.com/ppe-detection:latest
+          docker push 794038239290.dkr.ecr.us-east-1.amazonaws.com/ppe-detection:latest
 
   # Continuous Deployment
   deploy_to_ec2:
